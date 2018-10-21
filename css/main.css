@@ -6,6 +6,7 @@ body{
 }
 nav{
 	font-weight: 150;
+	border-bottom: 4px solid #111;
 }
 .mainbody{
 	background-color: #f0f0f0
