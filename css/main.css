@@ -2,6 +2,7 @@ body{
 	background-color: #303030;
 	color: white;
 	margin: 5px;
+	font-family: 'Roboto', sans-serif;
 }
 
 #wrapper{
@@ -31,7 +32,7 @@ body{
 	#projectsbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto;
   }
 }
 
@@ -45,29 +46,76 @@ body{
 
 #leftbar img{
 	max-width: 100%;
+	border-radius: 10px;
+}
+
+#coverletter{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+hr{
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #8c8b8b, #f0f0f0, #8c8b8b);
+  background-image: -moz-linear-gradient(left, #8c8b8b, #f0f0f0, #8c8b8b);
+  background-image: -ms-linear-gradient(left, #8c8b8b, #f0f0f0, #8c8b8b);
+  background-image: -o-linear-gradient(left, #8c8b8b, #f0f0f0, #8c8b8b); 
 }
 
 #projectTitle{
 	grid-column: span 2;
 }
-.project{
+.hobby{
+	grid-column: span 2;
+	grid-row: span 2;
+	min-height: 200px;
+}
+.hobby img{
+	min-width: 100%;
+	max-width: 10%;
+}
+.hobbytitle{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	color: #eeeeee;
+	transform: translate(-50%, -50%);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.hobby, .project{
 	border-radius: 5px;
 	background-color: #404040;
 	margin-top: 1px;
 	margin-bottom: 1px;
 	max-height: 200px;
 	overflow: hidden;
+	position: relative;
 }
 
 .project img{
-	max-width: 100%;
 	opacity: 0.25;
+	max-width: 100%;
+	min-width: 100%;
 	-webkit-transition: opacity 1s; /* Safari */
     transition: opacity 1s;
 }
 
-.project img:hover{
+.project:hover img{
+	opacity: 0.9;
+}
+.project:hover .projecttitle{
 	opacity: 1;
+}
+.projecttitle{
+	opacity: 0;
+	color: black;
+	top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	position: absolute;
+	-webkit-transition: opacity 1s; /* Safari */
+    transition: opacity 1s;
 }
 
 #footer{
