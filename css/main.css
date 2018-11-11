@@ -19,7 +19,30 @@ h1{
 	display: flex;
 	flex-direction: column;
 }
-
+#skills{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-around;
+}
+.skillsection{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-align: center;
+	background-color: #454545;
+	margin: 1px;
+	margin-right: 2px;
+}
+.skillsection i{
+	font-size: 1.5em;
+}
+.skill{
+	display: flex;
+	margin: auto;
+}
+.skillsection i:before{
+	 vertical-align: -50%;
+}
 @media (min-width: 768px) {
 	#wrapper {
     display: grid;
@@ -38,6 +61,10 @@ h1{
 	#projectsbar {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		align-items: flex-start;
+		grid-gap: 0px;
+		height: 0px;
 	}
 }
 
@@ -86,7 +113,7 @@ hr{
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .hobby, .project{
-	border-radius: 5px;
+	/*border-radius: 5px; */
 	background-color: #404040;
 	margin-top: 1px;
 	margin-bottom: 1px;
