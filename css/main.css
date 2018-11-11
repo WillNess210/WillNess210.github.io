@@ -107,7 +107,7 @@ hr{
 
 .hobbytitle{
 	position: absolute;
-	top: 10%;
+	top: 50%;
 	left: 50%;
 	color: #eeeeee;
 	transform: translate(-50%, -50%);
@@ -128,7 +128,7 @@ hr{
 .projecttitle{
 	opacity: 0;
 	color: white;
-	top: 10%;
+	top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 	position: absolute;
