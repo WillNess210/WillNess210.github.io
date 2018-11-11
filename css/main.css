@@ -197,6 +197,10 @@ hr{
 .hobby2{
 	background-image : url(../images/robotics.jpg);
 }
+.hobby3{
+	background-position: center top;
+	background-image : url(../images/boulder.jpg);
+}
 .project1{
 	background-image : url(../images/RobotSim.png);
 }
