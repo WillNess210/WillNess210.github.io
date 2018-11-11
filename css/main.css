@@ -71,7 +71,7 @@ h1{
 }
 
 .mainbody{
-	border-radius: 5px;
+	
 }
 
 #leftbar{
@@ -80,7 +80,7 @@ h1{
 
 #leftbar img{
 	max-width: 100%;
-	border-radius: 10px;
+	
 }
 
 #coverletter{
@@ -212,4 +212,12 @@ hr{
 }
 .project4{
 	background-image : url(../images/softwaredev.jpg);
+}
+
+.notopmargin{
+	margin-top: 0px;
+}
+
+.nobottommargin{
+	margin-bottom: 0px;
 }
