@@ -7,6 +7,7 @@ body{
 	font-weight: 300;
 	text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: subpixel-antialiased !important;
+	overflow-x:hidden;
 }
 h1{
 	font-weight: normal;
