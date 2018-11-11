@@ -36,10 +36,9 @@ h1{
 
 @media (min-width: 1200px) {
 	#projectsbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 .mainbody{
