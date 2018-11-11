@@ -2,9 +2,15 @@ body{
 	background-color: #303030;
 	color: white;
 	margin: 5px;
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif; */
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: subpixel-antialiased !important;
 }
-
+h1{
+	font-weight: normal;
+}
 #wrapper{
 	display: flex;
 	flex-direction: column;
@@ -71,10 +77,7 @@ hr{
 	grid-row: span 2;
 	min-height: 200px;
 }
-.hobby img{
-	min-width: 100%;
-	max-width: 10%;
-}
+
 .hobbytitle{
 	position: absolute;
 	top: 10%;
@@ -91,44 +94,35 @@ hr{
 	max-height: 200px;
 	overflow: hidden;
 	position: relative;
+	background-position: center;
+	background-size: cover;
 }
 
-.project img{
-	opacity: 0.25;
-	max-width: 100%;
-	min-width: 100%;
+.projecttitle{
+	opacity: 0;
+	color: white;
+	top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	position: absolute;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.project{
+	opacity: 0.5;
 	-webkit-transition: opacity 1s; /* Safari */
     transition: opacity 1s;
+	min-height: 200px;
 }
-
-.project:hover img{
+.project:hover{
 	opacity: 0.9;
 }
 .project:hover .projecttitle{
 	opacity: 1;
 }
-.projecttitle{
-	opacity: 0;
-	color: black;
-	top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	position: absolute;
-	-webkit-transition: opacity 1s; /* Safari */
-    transition: opacity 1s;
-}
-#myphoto{
-	position:relative;
-	overflow: hidden;
-}
-#phototitle{
-	position:absolute;
-	top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	font-size: 1.5em;
-	white-space: nowrap;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+#myname{
+	font-size: 3em;
+	padding: 0px;
+	margin: 0px;
 }
 #footer{
 	grid-column: span 2;
@@ -136,4 +130,23 @@ hr{
 
 .centertext{
 	text-align: center;
+}
+
+.hobby1{
+	background-image : url(../images/tennis.png);
+}
+.hobby2{
+	background-image : url(../images/robotics.jpg);
+}
+.project1{
+	background-image : url(../images/RobotSim.png);
+}
+.project2{
+	background-image : url(../images/buffvex.jpg);
+}
+.project3{
+	background-image : url(../images/halite3.png);
+}
+.project4{
+	background-image : url(../images/softwaredev.png);
 }
