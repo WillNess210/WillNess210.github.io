@@ -137,7 +137,7 @@ hr{
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .project{
-	opacity: 0.5;
+	opacity: 0.2;
 	-webkit-transition: opacity 1s; /* Safari */
     transition: opacity 1s;
 	min-height: 200px;
