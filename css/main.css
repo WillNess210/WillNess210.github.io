@@ -85,8 +85,10 @@ h1{
 }
 
 #coverletter{
-	margin-right: 10px;
-	margin-left: 10px;
+	background-color: #454545;
+	margin: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 hr{
